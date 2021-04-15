@@ -1,0 +1,29 @@
+name: p0tt3r-iOS
+permalink: :year/:month/:day/:title
+baseurl: ""
+
+# Your blog's start year and this year, showed in the footer left
+# start is optional
+start: 2021
+now: 2021
+ 
+# Social links showed in the footer
+# You just need modify the nickname of github and twitter
+link:
+  email : donghun.dev@gmail.com
+  github : p0tt3r-iOS
+  twitter : yourname
+
+# Links in the navigation, you can modify both link name and link url
+nav:
+   TIL: "/"
+   posts: "/devpost"
+   about: "/about"
+
+   
+markdown: kramdown
+highlighter: rouge
+
+sass:
+  sass_dir: _sass
+  style: compressed

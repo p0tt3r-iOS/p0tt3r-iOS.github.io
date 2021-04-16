@@ -81,10 +81,10 @@ excerpt: ""
 
 - 위 두 가지 방법을 사용해서 Data Model을 생성하면,  
     Project Navigator에서 파일을 확인할 수 있습니다.  
-![https://user-images.githubusercontent.com/46529663/114820621-3c100600-9dfa-11eb-99a1-7338ebd3c086.png](https://user-images.githubusercontent.com/46529663/114820621-3c100600-9dfa-11eb-99a1-7338ebd3c086.png)
+![https://user-images.githubusercontent.com/46529663/114820621-3c100600-9dfa-11eb-99a1-7338ebd3c086.png](https://user-images.githubusercontent.com/46529663/114820621-3c100600-9dfa-11eb-99a1-7338ebd3c086.png)  
 (클래스 명은 Entity 명으로 설정되니, 파일 명은 Model, Data Model 등으로 설정하셔도 됩니다.)  
 
 참고자료  
-[Apple Developer Documentation](https://developer.apple.com/documentation/coredata)  
+[Apple Developer Documentation: Core Data](https://developer.apple.com/documentation/coredata)  
   
-[Apple Developer Documentation](https://developer.apple.com/documentation/coredata/creating_a_core_data_model)
+[Apple Developer Documentation: Creating a Core Data Model](https://developer.apple.com/documentation/coredata/creating_a_core_data_model)

@@ -13,6 +13,8 @@ excerpt: ""
 > 1. Configuring Entities: Entity 추가하기  
 2. Configuring Attributes: Attributes 추가하기
 
+- Core Data Stack은 [다음 글](https://p0tt3r-ios.github.io/2021/04/16/iOS-Framework-Core-Data-(3))로...
+
 ## Configuring Entities
 
 ---
@@ -34,7 +36,7 @@ Entity를 추가한 후 우측 Inspector bar의 data inspector을 보면 설정�
 - Codegen  
     Code generation의 약자로 선택된 옵션에 따라 Entity를 지원하기 위해   
     managed object subclass와 프로퍼티 파일을 생성한다.  
-    3가지 값을 선택할 수 있는데,  
+    세 가지 옵션 중 하나를 선택할 수 있는데,  
     1. Class Definition(기본 값)  
         - **생성된 로직이나 프로퍼티를 수정할 필요가 없는 경우 사용하는 옵션**  
         - 이 옵션을 사용할 경우, 생성된 소스코드 파일이 프로젝트에 보이지 않는다.  
@@ -48,7 +50,7 @@ Entity를 추가한 후 우측 Inspector bar의 data inspector을 보면 설정�
             3. Create 버튼을 클릭하면, Class와 properties 파일이 생성되는데,  
                 Properties 파일은 삭제한다.  
                 (위 옵션에서도 프로퍼티는 빌드 할 때 생성되기 때문에)  
-                ![https://user-images.githubusercontent.com/46529663/114827680-f9ebc200-9e03-11eb-99a6-73e006ca5752.png](https://user-images.githubusercontent.com/46529663/114827680-f9ebc200-9e03-11eb-99a6-73e006ca5752.png)
+                ![https://user-images.githubusercontent.com/46529663/114827680-f9ebc200-9e03-11eb-99a6-73e006ca5752.png](https://user-images.githubusercontent.com/46529663/114827680-f9ebc200-9e03-11eb-99a6-73e006ca5752.png)  
                 생성하고 나면, 프로젝트 네비게이터에 아래와 같이 나타난다.  
                 ![https://user-images.githubusercontent.com/46529663/114827765-0ec85580-9e04-11eb-99d9-a9551e96d9e3.png](https://user-images.githubusercontent.com/46529663/114827765-0ec85580-9e04-11eb-99d9-a9551e96d9e3.png)
 
@@ -58,9 +60,9 @@ Entity를 추가한 후 우측 Inspector bar의 data inspector을 보면 설정�
         - 파일 생성 방법은 Category/Extension과 같고, 프로퍼티 파일을 삭제하지 않고 사용한다.  
 
 참고자료  
-[Apple doc: Configuring Entities](https://developer.apple.com/documentation/coredata/modeling_data/configuring_entities/)  
+[Apple Developer Documentation: Configuring Entities](https://developer.apple.com/documentation/coredata/modeling_data/configuring_entities/)  
 
-[Apple doc: Generating Code](https://developer.apple.com/documentation/coredata/modeling_data/generating_code)
+[Apple Developer Documentation: Generating Code](https://developer.apple.com/documentation/coredata/modeling_data/generating_code)
 
 ## Configuring Attributes  
 

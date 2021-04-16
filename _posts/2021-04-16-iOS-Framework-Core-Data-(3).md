@@ -18,20 +18,22 @@ Core Data Model을 만든 후, 본격적인 구현은 Core Data Stack을 만들�
 ---
 
 ### Core Data Stack
-저도 Core Data Stack 부분 이해하는데, 시간이 오래걸렸는데,  
-이걸 이해 하셔야 Core Data를 알고 사용할 수 있습니다.  
+저도 Core Data Stack 부분 이해하는데, 시간이 오래걸렸는데, 이걸 이해 하셔야 Core Data를 알고 사용할 수 있습니다.  
 
 - Core Data는 앱의 모델 계층을 관리, 유지하기 위해 몇가지 클래스를 제공합니다.  
     이러한 클래스를 통틀어 Core Data Stack이라 하는데, 아래와 같습니다.  
-    1. NSManagedObjectModel: Core Data Stack에서 접근할 데이터를 나타냅니다.  
-    2. NSManagedObjectContext  
+    
+    1. **NSManagedObjectModel**: Core Data Stack에서 접근할 데이터를 나타냅니다.  
+    
+    2. **NSManagedObjectContext**  
         - 위 객체는 앱이 가장 많이 상호작용하는 객체이며, 앱 전체에 노출됩니다.  
         - 영구 저장소에서 객체를 가져올 때, 임시 복사본으로 가져와 수정할 수 있고 저장하지 않는 한 영구 저장소의 데이터는 변경되지 않는다.  
         - 모든 managed objects는 managed object context에 등록되어야 합니다.  
             컨텍스트(Context)를 사용하여 개체 그래프에 개체를 추가하고, 삭제할 수 있습니다.  
         - 컨텍스트는 각 개체의 Attrubutes와 개체 간의 관계의 변경 사항을 추적합니다.  
             추적을 통해 컨텍스트는 undo(뒤로가기)와 redo(다시하기) 기능을 제공할 수 있습니다.  
-    3. NSPersistentStoreCoordinator  
+            
+    3. **NSPersistentStoreCoordinator**  
         - 영구 저장소(NSPersistentStore)에서 앱 타입의 인스턴스를 저장하고, 가져옵니다.  
             (영구 저장소는 디스크에 있을 수도, 메모리에 있을 수도 있습니다)  
         - NSManagedObjectModel 개체가 초기화 된 후 생성됩니다.  
@@ -39,7 +41,8 @@ Core Data Model을 만든 후, 본격적인 구현은 Core Data Stack을 만들�
             해당 데이터를 요청하는 NSManagedObjectContext로 전달합니다.  
         - NSPersistentStore을 추가하는 호출은 비동기적으로 수행됩니다.  
             (동기적 수행 시, 예외상황에서 UI 스레드를 멈춰버리는 등의 상황이 발생할 수 있음)  
-    4. NSPersistentContainer  
+            
+    4. **NSPersistentContainer**  
         - Core Data Stack 생성을 처리합니다.  
             (Model, Context, Coordinator을 한 번에 설정합니다.)  
         - NSManagedObjectContext에 대한 접근과 여러 편리한 메서드를 제공합니다.  
@@ -92,16 +95,16 @@ Core Data Model을 만든 후, 본격적인 구현은 Core Data Stack을 만들�
     import CoreData
 
     class ViewController: UIViewController {
-    		// 아래 코드와 같이 persistent container를 참조하는 변수 선언
-    		var container: NSPersistentContainer!
+        // 아래 코드와 같이 persistent container를 참조하는 변수 선언
+        var container: NSPersistentContainer!
 
-    		override func viewDidLoad() {
-    				super.viewDidLoad()
-    				guard container != nil else {
-                     fatalError("This view needs a persistent container.")
-    				}
-    				// 이 아래 코드는 persistent container가 사용 가능한 경우 실행됩니다.
-    		}
+        override func viewDidLoad() {
+            super.viewDidLoad()
+            guard container != nil else {
+                fatalError("This view needs a persistent container.")
+            }
+            // 이 아래 작성하는 코드는 persistent container가 사용 가능한 경우 실행됩니다.
+        }
     }
     ```
 
@@ -114,10 +117,10 @@ Core Data Model을 만든 후, 본격적인 구현은 Core Data Stack을 만들�
 
     ```swift
     class AppDelegate: UIResponder, UIApplicationDelegate {
-    		...
+        ...
         func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-             if let rootVC = window?.rooViewController
-    		}
+            if let rootVC = window?.rooViewController
+        }
         ...
     }
     ```
@@ -147,6 +150,5 @@ Core Data Model을 만든 후, 본격적인 구현은 Core Data Stack을 만들�
 
 ---
 
-- 추후에 Core Data를 백그라운드에서 받아올 때, 참조할 문서 [Using Core Data in the Background]  
-
-[Apple Developer Documentation](https://developer.apple.com/documentation/coredata/using_core_data_in_the_background)
+- 추후에 Core Data를 백그라운드에서 받아올 때, 참조할 문서
+    [Apple Developer Documentation: Using Core Data in the Background](https://developer.apple.com/documentation/coredata/using_core_data_in_the_background)

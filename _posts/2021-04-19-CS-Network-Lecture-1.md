@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "[CS-Network] Chapter 1: Introduction"
+title: "Network Lecture 1: Introduction"
 date: 2021-04-19
 category: read 
 excerpt: ""
@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# [CS-Network] Chapter 1: Introduction
+# [CS-Network] Lecture 1: Introduction
 
 - Network edge: application and host(랩탑, 데스크탑, 서버 등)
 - Network core: router(들어오는 데이터를 목적지까지 전송)
@@ -31,6 +31,7 @@ Server: 항시 연결되어서 클라이언트로 부터의 요청을 기다리�
             - in-oreder byte-stream data transfer: 보낸 순서를 지켜서 서버에 도달한다.  
         - flow control: Sender가 보내는 속도를 조절해준다.(Receiver의 처리 속도에 맞춰서)  
         - congestion control: 네트워크 상황에 맞춰전송 속도를 조절한다.  
+        
         신뢰성이 높지만 UDP에 비해 비용이 많이 든다.(Computing / Network resource)
 
     - Connectionless service(UDP)  
@@ -39,10 +40,13 @@ Server: 항시 연결되어서 클라이언트로 부터의 요청을 기다리�
         - unreliable data transfer  
         - no flow control  
         - no congestion control  
+        
         Unreliable한 데이터 전송을 할 때, 사용된다.(일부가 유실되어도 문제가 없을 때)  
-        - Real time voice(통화 / 오디오 패키지가 일부 유실되어도 사용자는 모르기 때문에)
+        예시: Real time voice(통화 / 오디오 패키지가 일부 유실되어도 사용자는 모르기 때문에)
 
 ## The Network Core
+
+---
   
 그물 형태의 서로 연결된 라우터들  
 
@@ -53,7 +57,7 @@ Server: 항시 연결되어서 클라이언트로 부터의 요청을 기다리�
         - 유저가 보내는 packet 단위의 데이터를 들어온 순서대로(Queue 또는 buffer) 목적지에 발송한다.  
 
 - Packet switching vs Circuit switching  
-    - 조건  
+    - 조건(전제)  
         - 1Mb/s link  
         - each user:  
             - 100kb/s when "active"  

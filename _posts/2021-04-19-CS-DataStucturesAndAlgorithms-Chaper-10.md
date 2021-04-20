@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# [CS-Data Structures & Algorithms]  Chapter 10: Trees
+# [CS-Data Structures & Algorithms] Chapter 10: Trees
 
 - Tree는 매우 중요한 자료구조이며 소프트웨어 개발의 다양한 측면에서 사용되는데, 간단한 예로
     1. 계층적 관계 표현  

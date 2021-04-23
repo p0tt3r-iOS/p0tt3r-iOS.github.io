@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Lecture 3: Socket / Outline"
+title: "Network Lecture 3: Application Layer (1)"
 date: 2021-04-21
 category: read 
 excerpt: ""
@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# [CS-Network] Lecture 3: Socket / Outline
+# [CS-Network] Lecture 3: Application Layer (1)
 
 ## What is socket?
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Lecture 2: Outline"
+title: "Network Lecture 2: Introduction (2)"
 date: 2021-04-20
 category: read 
 excerpt: ""
@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# [CS-Network] Lecture 2: Outline
+# [CS-Network] Lecture 2: Introduction (2)
 
 - 네트워크 계층: App - Transport - Network - Link - Physical  
 - Network apps: 네트워크 기능이 있는 프로세스  

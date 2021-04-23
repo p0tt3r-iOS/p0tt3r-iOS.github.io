@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Network Lecture 1: Introduction"
+title: "Network Lecture 1: Introduction (1)"
 date: 2021-04-19
 category: read 
 excerpt: ""
@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# [CS-Network] Lecture 1: Introduction
+# [CS-Network] Lecture 1: Introduction (1)
 
 - Network edge: application and host(랩탑, 데스크탑, 서버 등)
 - Network core: router(들어오는 데이터를 목적지까지 전송)

@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# Lecture 6: Transport Layer (2)
+# [CS-Network] Lecture 6: Transport Layer (2)
 
 ## TCP: Overview
 
@@ -35,9 +35,9 @@ excerpt: ""
 ![https://user-images.githubusercontent.com/46529663/115950569-04e6d680-a517-11eb-9a4f-ff2288b8671e.png](https://user-images.githubusercontent.com/46529663/115950569-04e6d680-a517-11eb-9a4f-ff2288b8671e.png)
 
 - Application Layer의 전송단위: Message  
-- Transport Layer의 전송단위: Segment[Header(부가적인 정보) | Data(= Message)]  
-- Network Layer의 전송단위: Packet[Header | Data(= Segment)]  
-- Link Layer의 전송단위: Frame[Header | Data(= Packet)
+- Transport Layer의 전송단위: Segment[Header(부가적인 정보) : Data(= Message)]  
+- Network Layer의 전송단위: Packet[Header : Data(= Segment)]  
+- Link Layer의 전송단위: Frame[Header : Data(= Packet)
 
 ## TCP seq # and ACK
 

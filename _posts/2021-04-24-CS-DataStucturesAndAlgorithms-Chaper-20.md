@@ -8,7 +8,7 @@ excerpt: ""
 
 ---
 
-# Chapter 20: Binary Search
+# [CS-Data Structures & Algorithms] Chapter 20: Binary Search
 
 - 이진 탐색은 가장 효과적인 탐색 알고리즘 중 하나로, O(log n)의 시간 복잡도를 가진다.
     - 이진 탐색이 사용 되기 위해서는 두 가지가 필요한데,  
